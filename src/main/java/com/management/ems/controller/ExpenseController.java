@@ -20,6 +20,7 @@ public class ExpenseController {
 
     @PostMapping("/")
     public ResponseEntity<ResponseDto> addExpense(@RequestBody ExpenseRequestDto expenseRequestDto){
+        System.out.println("In Expense Controller");
         return expenseService.addExpense(expenseRequestDto);
     }
 }
