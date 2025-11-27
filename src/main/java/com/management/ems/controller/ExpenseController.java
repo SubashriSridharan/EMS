@@ -21,6 +21,7 @@ public class ExpenseController {
     @PostMapping("/")
     public ResponseEntity<ResponseDto> addExpense(@RequestBody ExpenseRequestDto expenseRequestDto){
         System.out.println("In Expense Controller");
+        System.out.println("Expense Controller Data");
         return expenseService.addExpense(expenseRequestDto);
     }
 }
